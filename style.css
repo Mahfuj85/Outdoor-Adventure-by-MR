@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
+header{
+    background-image: url(./Images/dawn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.275);
+    background-blend-mode: multiply;
+    background-position: bottom;
+
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+
+}
+.logo h2{
+    line-height: 0.7;
+}
+.logo h2 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.logo h2 a span{
+    font-size: 16px;
+    font-weight: 300;
+    /* display: block; */
+}
+
+nav{}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li{
+    display: inline;
+    margin-left: 25px;
+}
+nav ul li:last-child{
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+/* .last{
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+} */
+
+/* Banner div */
+.banner{
+    text-align: center;
+    padding: 185px 0;
+    color: white;
+}
+.banner span{
+    background: red;
+    height: 5px;
+    width: 175px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+.banner h3{
+    font-style: italic;
+    font-size: 25px;
+    margin-bottom: 4px;
+}
+.banner h1{
+    font-size: 50px;
+}
+.banner button{
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: #FB2259;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+/* Upcoming section */
+
+.upcoming{
+    text-align: center;
+    /* margin-bottom: 100px; */
+    margin: 50px auto 120px;
+}
+.upcoming h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+.upcoming span {
+    background: red;
+    height: 5px;
+    width: 175px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    margin: 0 auto 30px;
+}
+.upcoming-parent{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+.upcoming-item{
+    /* background-color: blueviolet; */
+    padding: 30px;
+    height: 500px;
+    width: 600px;
+}
+.upcoming-item img{
+    height: 450px;
+    width: 100%;
+    border-radius: 20px;
+    /* box-shadow: 10px 10px 1px #c7c6c6ba; */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.upcoming-item h4{
+    font-size: 22px;
+
+}
+.upcoming-item a{
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #FB2259;
+}
+
+/* Explore Section */
+.explore-main{
+    padding: 250px 0;
+    background-image: url(./Images/father.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(5, 5, 208, 0.577);
+    background-attachment: fixed;
+}
+.explore{
+    display: flex;
+}
+.explore-item{
+    color: white;
+    width: 50%;
+    margin: 0;
+}  
+.explore-item h2{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}  
+.explore-item span{ 
+    background: red;
+    height: 5px;
+    width: 175px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    /* margin-left: 0; */
+    margin: 0 0 50px;
+}
+.explore-item p{
+    text-align: left;
+    padding: 0 250px 0 0;
+    margin-bottom: 30px;
+}
+.explore-item a{
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 8px 15px;
+    background-color: #FB2259;
+    border-radius: 20px;
+}
+
+/* Tour Section */
+.tour{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px 150px;
+}
+.tour-item{
+    /* width: 33.33%; */
+    margin: 30px;
+}
+.tour-item h3{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+.tour-item span{
+    background: red;
+    height: 5px;
+    width: 175px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    /* margin-left: 0; */
+    margin: 0 0 50px;
+}
+.tour-item p{
+    margin: 50px 0;
+}
+.tour-item button{
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: #FB2259;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.image-one{
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    margin: 0 0 30px 0;
+}
+.image-two{
+    width: 350px;
+    height: 700px;
+    object-fit: cover;
+    margin: 0 0 30px 0;
+
+}
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 20px;
+}
+
+footer .heart{
+    font-size: 20px;
+    font-weight: 600;
+    color: #FB2259;
+}
+
+
+
+

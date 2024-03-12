@@ -7,7 +7,7 @@ body{
     box-sizing: border-box;
 }
 .container{
-    width: 100%;
+    width: 80%;
     margin: auto;
 }
 img{
@@ -262,6 +262,7 @@ nav ul li a{
     margin: 0 0 30px 0;
 
 }
+/* Footer Section */
 footer {
     width: 100%;
     text-align: center;
@@ -275,6 +276,302 @@ footer .heart{
     color: #FB2259;
 }
 
+/* Small smart phone, large smart phone */
+@media only screen and (max-width: 668px) {
+    /* Header */
+    .navbar{
+        flex-direction: column;
+    }
+    .logo h2{
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;
+    }
+    
+    nav{
+        margin: auto;
+    }
+    nav ul{
+        margin: auto;
+    }
+    nav ul li{
+        margin-left: 3px;
+    }
+    nav ul li:last-child{
+        padding: 5px 5px;
+    }
+    
+/* Banner div */
+.banner{
+    padding: 50px 0;
+}
+.banner span{
+    height: 3px;
+    width: 120px;
+}
+.banner h3{
+    font-size: 20px;
+}
+.banner h1{
+    font-size: 30px;
+}
+.banner button{
+    padding: 5px 10px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+/* Upcoming section */
+.upcoming{
+    margin: 50px auto 50px;
+}
+.upcoming h2{
+    font-size: 35px;
+}
+.upcoming span {
+    width: 145px;
+}
+.upcoming-parent{
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    grid-gap: 20px;
+}
+.upcoming-item{
+    width: 100%;
+    margin: auto;
+}
+.upcoming-item img{
+    height: 400px;
+    width: 100%;
+}
+.upcoming-item h4{
+    font-size: 20px;
+
+}
+
+/* Explore Section */
+
+.explore-item h2{
+    font-size: 30px;
+}  
+.explore-item span{ 
+    height: 3px;
+    width: 110px;
+    border-radius: 3px;
+}
+.explore-item p{
+    padding: 0 100px 0 0;
+}
+.explore-item a{
+    font-size: 15px;
+    padding: 6px 12px;
+}
+/* Tour Section */
+.tour{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px 10px;
+}
+.tour-item{
+    margin: 30px;
+}
+.tour-item h3{
+    font-size: 20px;
+}
+.tour-item span{
+    height: 3px;
+    width: 90px;
+    border-radius: 3px;
+}
+.tour-item p{
+    margin: 30px 0;
+}
+
+.image-one{
+    width: 400px;
+    margin: 0 0 20px 0;
+}
+.image-two{
+    width: 400px;
+    height: 400px;
+    margin: 0 0 20px 0;
+
+}
+/* Footer Section */
+footer {
+    width: 90%;
+    padding: 15px 0;
+    margin-top: 10px;
+}
+
+}
+/* tab, tab landscape, landscape mobile phone */
+@media only screen and (min-width: 669px) and (max-width: 992px){
+    /* Header */
+    .logo h2{
+        font-size: 25px;
+    }
+    
+    nav{
+        margin: auto;
+    }
+    nav ul{
+        margin: auto;
+    }
+    
+    
+/* Banner div */
+.banner{
+    padding: 100px 0;
+}
+.banner span{
+    height: 5px;
+    width: 150px;
+}
+.banner h3{
+    font-size: 30px;
+}
+.banner h1{
+    font-size: 50px;
+}
+.banner button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+/* Upcoming section */
+.upcoming{
+    margin: 50px auto 60px;
+}
+.upcoming h2{
+    font-size: 40px;
+}
+.upcoming span {
+    width: 155px;
+}
+.upcoming-parent{
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    grid-gap: 40px;
+}
+.upcoming-item{
+    width: 90%;
+}
+.upcoming-item img{
+    height: 450px;
+}
+/* Explore Section */
+.explore-main{
+    margin-top: 80px;
+}
+.explore-item h2{
+    font-size: 50px;
+}  
+
+.explore-item p{
+    padding: 0 200px 0 0;
+}
+
+/* Tour Section */
+.tour{
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 10px;
+}
+.tour-item{
+    margin: 10px;
+}
+.tour-item h3{
+    font-size: 30px;
+}
+.tour-item span{
+    height: 4px;
+    width: 100px;
+    border-radius: 5px;
+}
+.tour-item p{
+    margin: 20px 0;
+}
+
+.image-one{
+    height: 400px;
+    margin: 0 0 15px 0;
+}
+.image-two{
+    height: 700px;
+    margin: 0 0 15px 0;
+
+}
+
+/* Footer Section */
+
+}
+
+/* Small laptop, small desktop */
+@media only screen and (min-width: 993px) and (max-width: 1024px) {
+    .container{
+        width: 90%;
+    }
+    /* Upcoming section */
+.upcoming{
+    margin: 50px auto 60px;
+}
+.upcoming h2{
+    font-size: 50px;
+}
+.upcoming-parent{
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    grid-gap: 40px;
+}
+.upcoming-item{
+    width: 90%;
+}
+.upcoming-item img{
+    height: 450px;
+}
+/* Explore Section */
+.explore-main{
+    margin-top: 100px;
+}
+/* Tour Section */
+.tour{
+    margin: 20px 50px;
+}
+.tour-item{
+    margin: 15px;
+}
+.tour-item h3{
+    font-size: 40px;
+}
+/* Footer Section */
+
+}
 
 
+/* Medium desktop, Large laptop */
+@madia only screen and (min-width: 1025px) and (max-width: 1400px) {
+    .container{
+        width: 90%;
+    }
+    /* Upcoming section */
+    .upcoming h2{
+        font-size: 60px;
+    }
+    .upcoming-parent{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        grid-gap: 40px;
+    }
+    .upcoming-item{
+        width: 90%;
+    }
+    /* Explore Section */
+
+    /* Tour Section */
+
+    /* Footer Section */
+    
+    }
 
